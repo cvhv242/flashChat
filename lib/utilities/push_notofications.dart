@@ -16,7 +16,7 @@ class PushNotifications {
   Future<void> sendPushNotification(String? sender, String message) async {
     var body = {
       "registration_ids": [
-        "cToBGgKeTUWjUib5H9NOxc:APA91bFWq8oJ9LTf7E6za426WAGE3rOC28_5aNAU-_dm0MCCg4BlHZhR4UsClPJ4L033ytXGTKXxX34Wx01q6byDqElhKMWOgXsbSk5aYRevrMf-gjDxKxFkF_1KtpJr84ljdE6L97tz",
+        FCMToken!.toString();
       ],
       "notification": {
         "body": message,
