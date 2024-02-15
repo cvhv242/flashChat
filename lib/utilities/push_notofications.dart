@@ -7,7 +7,7 @@ class PushNotifications {
   final _firebaseMessaging = FirebaseMessaging.instance;
   String? FCMToken;
 
-  Future<String?> initialize() async {
+  Future<void> initialize() async {
     await _firebaseMessaging.requestPermission();
     FCMToken = await _firebaseMessaging.getToken();
     print(FCMToken);
