@@ -16,7 +16,7 @@ class PushNotifications {
   Future<void> sendPushNotification(String? sender, String message) async {
     var body = {
       "registration_ids": [
-        FCMToken!.toString();
+        FCMToken!.toString()
       ],
       "notification": {
         "body": message,
